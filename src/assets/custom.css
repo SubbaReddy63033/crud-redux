@@ -1,0 +1,64 @@
+.fixed-container {
+    width: 500px;  
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+.fixed-container input {
+    width: 100%;
+    max-width: 300px; 
+    margin: auto;
+}
+
+.fixed-container button {
+    width: 150px;
+    max-width: 100%;
+}
+
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.user-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Default width for larger screens */
+.user-card {
+    width: 250px;
+}
+
+/* ✅ Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .user-card {
+        width: 220px;
+    }
+}
+
+/* ✅ Small Screens (Phones) */
+@media (max-width: 768px) {
+    .user-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .fixed-container {  
+        width:276px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center !important;
+    }
+}
